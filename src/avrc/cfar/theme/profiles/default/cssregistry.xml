@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<object name="portal_css">
+
+ <!-- Set conditions on stylesheets we don't want to pull in -->
+ <stylesheet
+     expression="not:request/HTTP_X_THEME_ENABLED | nothing"
+     id="public.css"
+     />
+
+ <!-- Add new stylesheets -->
+ <!-- Note: applyPrefix is not available in Plone < 4.0b3 -->
+<!-- 
+ <stylesheet title="" authenticated="False" cacheable="True"
+    compression="safe" conditionalcomment="" cookable="True" enabled="on"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    id="++theme++avrc.theme.leadtheway/theme-css/style.css" media="" rel="stylesheet"
+    rendering="link"
+    applyPrefix="True"
+    /> -->
+
+ <!-- <stylesheet title="" authenticated="False" cacheable="True"
+    compression="safe" conditionalcomment="" cookable="True" enabled="on"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    id="++theme++avrc.theme.leadtheway/theme-css/reset.css" media="" rel="stylesheet"
+    rendering="link"
+    applyPrefix="True"
+    />
+
+ <stylesheet title="" authenticated="False" cacheable="True"
+    compression="safe" conditionalcomment="" cookable="True" enabled="on"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    id="++theme++avrc.theme.leadtheway/theme-css/sliderkit-core.css" media="screen" rel="stylesheet"
+    rendering="link"
+    applyPrefix="True"
+    />
+
+
+ <stylesheet title="" authenticated="False" cacheable="True"
+    compression="safe" conditionalcomment="" cookable="True" enabled="on"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    id="++theme++avrc.theme.leadtheway/theme-css/handheld.css" media="only screen and (max-device-width: 480px)" rel="stylesheet"
+    rendering="link"
+    applyPrefix="True"
+    /> -->
+</object>

@@ -26,6 +26,7 @@ setup(name='avrc.cfar.theme',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'plone.app.theming'
           # -*- Extra requirements: -*-
       ],
       entry_points="""
