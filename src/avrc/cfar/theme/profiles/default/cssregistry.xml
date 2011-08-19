@@ -9,15 +9,15 @@
 
  <!-- Add new stylesheets -->
  <!-- Note: applyPrefix is not available in Plone < 4.0b3 -->
-<!-- 
+
  <stylesheet title="" authenticated="False" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
     expression="request/HTTP_X_THEME_ENABLED | nothing"
-    id="++theme++avrc.theme.leadtheway/theme-css/style.css" media="" rel="stylesheet"
+    id="++theme++avrc.cfar.theme/theme-css/style_screen.css" media="" rel="stylesheet"
     rendering="link"
     applyPrefix="True"
-    /> -->
-
+    />
+    
  <!-- <stylesheet title="" authenticated="False" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
     expression="request/HTTP_X_THEME_ENABLED | nothing"

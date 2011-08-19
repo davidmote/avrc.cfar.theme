@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <xsl:variable name="wrapped" css:select="#visual-portal-wrapper"/>
+    <xsl:variable name="columns" css:select="#portal-column-two"/>
+
+    <!-- The default theme, used for standard Plone web pages -->
+    <theme href="./home.html" if-path="/ /front-page" />
+    <theme href="./default.html" />
+    <notheme if-content="not($wrapped)" />
+    <replace css:theme="base" css:content="base" />
+    <!-- Rules applying to a standard Plone web page -->
+    <rules css:if-content="#visual-portal-wrapper">
+        <replace css:theme="title" css:content="title" />
+        <!-- Add meta tags -->
+        <drop theme="/html/head/meta" />
+        <after content="/html/head/meta" theme-children="/html/head" />
+
+        <!-- Copy style, script and link tags in the order they appear in the content -->
+        <after
+            content-children="/html/head"
+            theme-children="/html/head"
+            />
+
+        <drop theme="/html/head/style" />
+        <drop theme="/html/head/script" />
+        <drop theme="/html/head/link" />
+
+        <!-- Copy over the id/class attributes on the body tag.
+             This is important for per-section styling -->
+        <merge attributes="class" css:content="body" css:theme="body" />
+        <copy attributes="id dir" css:content="body" css:theme="body" />
+<!-- 
+
+        <replace attributes="href" css:content='#portal-logo' css:theme="#portal-logo" />
+        
+        <replace css:content='.portletNavigationTree dd' css:theme-children='.portletNavigationTree' />
+
+        <replace css:content-children='#portal-breadcrumbs' css:theme-children='#portal-breadcrumbs' />
+
+        <replace css:content-children="#content" css:theme-children=".col-a" if-content="$columns" />
+
+        <replace css:content-children="#content" css:theme-children="#content" if-content="not($columns)" />
+        
+        
+        <before css:content="#edit-bar" css:theme="#content" />
+        <before css:content=".portalMessage" css:theme="#content" />
+
+        <replace css:content="#portal-siteactions li" css:theme-children="#bar" />
+        <replace css:content-children="#portal-column-one > *" css:theme-children="#column-one" />
+       <replace css:content-children="#portal-column-two > *" css:theme-children=".col-b" />
+ -->
+
+    </rules>
+</rules>
+    
