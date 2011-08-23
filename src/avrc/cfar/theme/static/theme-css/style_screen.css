@@ -1,5 +1,5 @@
 /* Main Body */
-body {font-size: 62.5%; margin: 0em auto; padding: 0px; font-family: verdana, sans-serif, tahoma,lucida Sans unicode, arial; background: url(theme-img/bg1.jpg) top center repeat-x; background-color: rgb(255,255,255);}
+body {font-size: 62.5%; margin: 0em auto; padding: 0px; font-family: verdana, sans-serif, tahoma,lucida Sans unicode, arial; background: url(../theme-images/bg1.jpg) top center repeat-x; background-color: rgb(255,255,255);}
 .page-container {width: 940px; margin: auto; margin-top: 0px; margin-bottom: 0px; padding: 0px 0px 0px 0px; border-top: solid 0px rgb(255,255,255); border-left: solid 0px rgb(0,0,0); border-right: solid 0px rgb(0,0,0); border-bottom: solid 0px rgb(183,210,239); background-color: transparent;}
 
 /* Site Header */
@@ -40,7 +40,7 @@ body {font-size: 62.5%; margin: 0em auto; padding: 0px; font-family: verdana, sa
 
 #contentbox-leftbar {clear: both; float: left; width: 165px; min-height: 150px; height: auto!important; margin: 0px 0px 0px 2px; padding: 0px 5px 0px 5px;}
 
-.nav-sub, .portletNavigationTree {clear: both; float: left; width: 160px; min-height: 150px; height: auto!important; height: 150px; margin: 10px 15px 0px 1px; padding: 0px 0px 10px 0px; background-color: transparent; border-left: solid 1px rgb(225,225,225); border-bottom: solid 1px rgb(225,225,225); background: url(theme-img/linebackgroundl.gif) top right no-repeat;}
+.nav-sub, .portletNavigationTree {clear: both; float: left; width: 160px; min-height: 150px; height: auto!important; height: 150px; margin: 10px 15px 0px 1px; padding: 0px 0px 10px 0px; background-color: transparent; border-left: solid 1px rgb(225,225,225); border-bottom: solid 1px rgb(225,225,225); background: url(../theme-images/linebackgroundl.gif) top right no-repeat;}
 .nav-sub ul, .portletNavigationTree ul {float: left; list-style: none; width: 150px; margin: 0px; padding: 0px; border-bottom: dotted 0px rgb(215,215,215);}
 .nav-sub li, .portletNavigationTree li {margin: 0px; padding: 0px;}
 .nav-sub li.navTreeTopNode, .portletNavigationTree li.navTreeTopNode {vertical-align: top; color: rgb(0,0,0); font-weight: none; font-size: 14px; border-bottom: solid 0px rgb(205,205,205)}
@@ -61,8 +61,9 @@ dd.portletItem {margin-left: 10px;}
 /* Content */
 .content {float: left; width: 940px; min-height: 170px; height: auto; margin: 10px 0px 0px 0px; padding: 0px 0px 10px 0px;}
 .contentbox-container {clear: both; float: left; width: 640px; margin: 5px 0px 10px 5px; padding: 0px; background-color: transparent;}
-.contentbox-full {width: 640px; margin: 0px 0px 0px 0px; padding: 0px;}
+.contentbox-full {width: 760px; margin: 0px 0px 0px 0px; padding: 0px;}
 .contentbox-partial {float: left; width: 545px; margin: 0px 0px 0px 0px; padding: 0px 5px 0px 5px; border-right: solid 0px rgb(235,235,235);}
+
 .contentbox-partial-half {float: left; width: 228px; margin: 10px 0px 0px 0px; padding: 0px 23px 0px 0px; border-right: solid 0px rgb(235,235,235);}
 .contentbox-sidebar, #content-rightbar {float: right; width: 175px; margin: 0px 2px 0px 0px; padding: 0px 5px 0px 5px; border-left: solid 0px rgb(235,235,235); font-size: 11px;}
 .contentbox-sidebar p, #content-rightbar p {font-size: 11px;}
@@ -92,7 +93,7 @@ p {margin: 0px 0px 0.1em 0px; padding: 0px; line-height: 18px; font-size: 12px; 
 /* Footer */
 .footer {clear: both; position: relative; width: 940px; height: 100px; display: block; margin: 0 auto; padding: 15px 20px; font-size: 1.0em; background-color: transparent;line-height: 120%;}
 .footer p {margin: 0px; padding: 0px; text-align: center; line-height: 1.3em; font-size: 110%; color: rgb(255,255,255)}
-.footer-cont {position: relative; clear: both; margin: 0;padding: 0; width: 100%; height: 100%px; display: block; background-color: rgb(128,0,0); background: url(theme-img/bg2.png) top center repeat-x;}
+.footer-cont {position: relative; clear: both; margin: 0;padding: 0; width: 100%; height: 100%px; display: block; background-color: rgb(128,0,0); background: url(../theme-images/bg2.png) top center repeat-x;}
 
 /* Hyperlinks for Navigation Texts */
 .content a {color: rgb(40,91,169); text-decoration: none;}
