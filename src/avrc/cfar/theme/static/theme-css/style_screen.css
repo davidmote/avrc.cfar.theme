@@ -162,14 +162,6 @@ dl.portletEvents dd.portletItem a.tile {
  display:block;
 }
 
-div.position-1\:4 {
-    margin-left: -98.875%;
-}
-
-div.width-3\:4 {
-    width: 97.75%;
-}
-
 #portal-siteactions {
     text-align: center;
     margin: 10px 5px 20px 5px;
