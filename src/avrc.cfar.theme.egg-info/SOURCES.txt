@@ -26,6 +26,9 @@ src/avrc/cfar/theme/static/default.html
 src/avrc/cfar/theme/static/manifest.cfg
 src/avrc/cfar/theme/static/orig.html
 src/avrc/cfar/theme/static/rules.xml
+src/avrc/cfar/theme/static/theme-css/edit_screen.css
+src/avrc/cfar/theme/static/theme-css/style_features.css
+src/avrc/cfar/theme/static/theme-css/style_screen.css
 src/avrc/cfar/theme/static/theme-images/Thumbs.db
 src/avrc/cfar/theme/static/theme-images/bg1.gif
 src/avrc/cfar/theme/static/theme-images/bg1.jpg

@@ -6,7 +6,15 @@
      expression="not:request/HTTP_X_THEME_ENABLED | nothing"
      id="public.css"
      />
+ <stylesheet
+     expression="not:request/HTTP_X_THEME_ENABLED | nothing"
+     id="member.css" authenticated="False"
+     />
 
+ <stylesheet
+     expression="not:request/HTTP_X_THEME_ENABLED | nothing"
+     id="dropdown-menu.css" 
+     />
  <!-- Add new stylesheets -->
  <!-- Note: applyPrefix is not available in Plone < 4.0b3 -->
 
@@ -17,29 +25,20 @@
     rendering="link"
     applyPrefix="True"
     />
-    
- <!-- <stylesheet title="" authenticated="False" cacheable="True"
-    compression="safe" conditionalcomment="" cookable="True" enabled="on"
-    expression="request/HTTP_X_THEME_ENABLED | nothing"
-    id="++theme++avrc.theme.leadtheway/theme-css/reset.css" media="" rel="stylesheet"
-    rendering="link"
-    applyPrefix="True"
-    />
 
  <stylesheet title="" authenticated="False" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
     expression="request/HTTP_X_THEME_ENABLED | nothing"
-    id="++theme++avrc.theme.leadtheway/theme-css/sliderkit-core.css" media="screen" rel="stylesheet"
+    id="++theme++avrc.cfar.theme/theme-css/style_features.css" media="" rel="stylesheet"
     rendering="link"
     applyPrefix="True"
     />
 
-
- <stylesheet title="" authenticated="False" cacheable="True"
+ <stylesheet title="" authenticated="True" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
-    expression="request/HTTP_X_THEME_ENABLED | nothing"
-    id="++theme++avrc.theme.leadtheway/theme-css/handheld.css" media="only screen and (max-device-width: 480px)" rel="stylesheet"
+    id="++theme++avrc.cfar.theme/theme-css/edit_screen.css" media="" rel="stylesheet"
     rendering="link"
     applyPrefix="True"
-    /> -->
+    /> 
+
 </object>

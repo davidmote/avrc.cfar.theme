@@ -5,7 +5,8 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <xsl:variable name="wrapped" css:select="#visual-portal-wrapper"/>
-    <xsl:variable name="columns" css:select="#portal-column-two"/>
+    <xsl:variable name="leftcolumns" css:select="#portal-column-one"/>
+    <xsl:variable name="rightcolumns" css:select="#portal-column-two"/>
 
     <!-- The default theme, used for standard Plone web pages -->
     <theme href="./home.html" if-path="/ news/" />
@@ -37,7 +38,7 @@
         <merge attributes="class" css:content="body" css:theme="body" />
         <copy attributes="id dir" css:content="body" css:theme="body" />
 
-        <replace attributes="href" css:content='#portal-logo' css:theme="#portal-logo" />
+        <copy attributes="href title accesskey" css:content="a#portal-logo" css:theme="a#logo-link" />
 
         <replace css:content="#portal-personaltools" css:theme-children=".nav-global ul li" />
 
@@ -48,8 +49,12 @@
         <drop css:content="#portal-breadcrumbs" />
         <drop css:content=".documentAuthor" />
 
-        <drop css:theme="#contentbox-rightbar" if-content="not($columns)" />
-        <strip css:theme=".contentbox-partial" if-content="not($columns)" />
+        <replace css:content-children="#portal-column-one"   css:theme-children="#contentbox-leftbar" />
+        <drop css:theme="#contentbox-leftbar" if-content="not($leftcolumns)" />
+        <drop css:theme="#contentbox-rightbar" if-content="not($rightcolumns)" />
+        <strip css:theme=".contentbox-partial" if-content="not($rightcolumns)" />
+        <replace css:content="#portal-siteactions"   css:theme="#footer-actions" />
+
         <after css:content="#visual-portal-wrapper script" css:theme-children="body" />
     </rules>
 </rules>
