@@ -55,6 +55,8 @@
         <drop css:content=".documentAuthor" />
         
         <rules if-path="/ front-page/">
+            <replace css:content="#edit-bar" css:theme="#edit-area" />
+
             <replace css:content-children="#portal-column-one > div:nth-of-type(1) .portletHeader"
             css:theme-children="#contentfeature1 > h2" />
 
@@ -73,6 +75,7 @@
         </rules>
         <replace css:content-children="#portal-column-one"
                  css:theme-children="#contentbox-leftbar" />
+                 
         <drop css:theme="#contentbox-leftbar"
               if-content="not($leftcolumns)" />
               
