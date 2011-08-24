@@ -176,3 +176,15 @@ dl.portletEvents dd.portletItem a.tile {
 #portal-siteactions li:first-child {
     border: 0px none;
 }
+
+#portal-globalnav ul.submenu a, #portal-globalnav ul.submenu a:hover {
+border-style: 0px none none;
+}
+
+div.position-1\:4 {
+    margin-left: -98.875%;
+}
+div.width-1\:2,
+div.width-3\:4 {
+    width: 97.75% !important;
+}
