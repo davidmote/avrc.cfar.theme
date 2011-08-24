@@ -15,6 +15,11 @@
      expression="not:request/HTTP_X_THEME_ENABLED | nothing"
      id="dropdown-menu.css" 
      />
+
+ <stylesheet
+     expression="not:request/HTTP_X_THEME_ENABLED | nothing"
+     id="columns.css" 
+     />
  <!-- Add new stylesheets -->
  <!-- Note: applyPrefix is not available in Plone < 4.0b3 -->
 
