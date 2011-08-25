@@ -46,6 +46,7 @@ src/avrc/cfar/theme/static/theme-images/headtitle.png
 src/avrc/cfar/theme/static/theme-images/linebackgroundl-backup.gif
 src/avrc/cfar/theme/static/theme-images/linebackgroundl.gif
 src/avrc/cfar/theme/static/theme-images/linebackgroundr.gif
+src/avrc/cfar/theme/static/theme-images/pb_close.png
 src/avrc/cfar/theme/static/theme-images/side1.png
 src/avrc/cfar/theme/static/theme-images/side2.png
 src/avrc/cfar/theme/static/theme-images/slogan1c.png
