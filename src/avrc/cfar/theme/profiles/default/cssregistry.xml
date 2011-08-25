@@ -26,22 +26,14 @@
  <stylesheet title="" authenticated="False" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
     expression="request/HTTP_X_THEME_ENABLED | nothing"
-    id="++theme++avrc.cfar.theme/theme-css/style_screen.css" media="" rel="stylesheet"
-    rendering="link"
-    applyPrefix="True"
-    />
-
- <stylesheet title="" authenticated="False" cacheable="True"
-    compression="safe" conditionalcomment="" cookable="True" enabled="on"
-    expression="request/HTTP_X_THEME_ENABLED | nothing"
-    id="++theme++avrc.cfar.theme/theme-css/style_features.css" media="" rel="stylesheet"
+    id="++theme++avrc.earlytest.theme/theme-css/style_screen.css" media="" rel="stylesheet"
     rendering="link"
     applyPrefix="True"
     />
 
  <stylesheet title="" authenticated="True" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
-    id="++theme++avrc.cfar.theme/theme-css/edit_screen.css" media="" rel="stylesheet"
+    id="++theme++avrc.earlytest.theme/theme-css/edit_screen.css" media="" rel="stylesheet"
     rendering="link"
     applyPrefix="True"
     /> 
