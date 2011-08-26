@@ -25,7 +25,6 @@ src/avrc/cfar/theme/profiles/default/theme.xml
 src/avrc/cfar/theme/static/default.html
 src/avrc/cfar/theme/static/home.html
 src/avrc/cfar/theme/static/manifest.cfg
-src/avrc/cfar/theme/static/orig.html
 src/avrc/cfar/theme/static/rules.xml
 src/avrc/cfar/theme/static/theme-css/edit_screen.css
 src/avrc/cfar/theme/static/theme-css/style_features.css
