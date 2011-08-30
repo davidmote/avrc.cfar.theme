@@ -14,7 +14,7 @@
     <notheme if="$ajax_load" />
     <notheme if-content="not($wrapped)" />
 
-    <replace css:theme="base" css:content="base" />
+    <before css:theme-children="head" css:content="base" />
     <!-- Rules applying to a standard Plone web page -->
     <rules if-content="$wrapped">
         <replace css:theme="title" css:content="title" />
