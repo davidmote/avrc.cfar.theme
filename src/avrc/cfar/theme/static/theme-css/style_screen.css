@@ -65,7 +65,7 @@ dd.portletItem {margin-left: 10px;}
 .contentbox-partial {float: left; width: 545px; margin: 0px 0px 0px 0px; padding: 0px 5px 0px 5px; border-right: solid 0px rgb(235,235,235);}
 
 .contentbox-partial-half {float: left; width: 228px; margin: 10px 0px 0px 0px; padding: 0px 23px 0px 0px; border-right: solid 0px rgb(235,235,235);}
-.contentbox-sidebar, #content-rightbar {float: right; width: 175px; margin: 0px 2px 0px 0px; border-left: solid 0px rgb(235,235,235); font-size: 11px;}
+.contentbox-sidebar, #content-rightbar {float: right; width: 175px; margin: 0px 2px 0px 0px; padding: 0px 5px 0px 5px; border-left: solid 0px rgb(235,235,235); font-size: 11px;}
 .contentbox-sidebar p, #content-rightbar p {font-size: 11px;}
 .documentFirstHeading {width: 100%; margin: 4px 0px 6px 0px; padding: 0px 0px 0px 0px; background-color: transparent; height: 25px; border-bottom: solid 2px rgb(223,229,243); color: rgb(0,0,0); text-transform: normal; font-weight: none; font-size: 17px;}
 .contentline {float: left; width: 605px; min-height: 1em; height: auto; margin: 0px 0px 0px 0px; padding: 0px; background-color: transparent; color: rgb(30,30,30);}
