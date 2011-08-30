@@ -40,7 +40,7 @@ body {font-size: 62.5%; margin: 0em auto; padding: 0px; font-family: verdana, sa
 
 #contentbox-leftbar {clear: both; float: left; width: 165px; min-height: 150px; height: auto!important; margin: 0px 0px 0px 2px; padding: 0px 5px 0px 5px;}
 
-.nav-sub, .portletNavigationTree {clear: both; float: left; width: 160px; min-height: 150px; height: auto!important; height: 150px; margin: 10px 15px 0px 1px; padding: 0px 0px 10px 0px; background-color: transparent; border-left: solid 1px rgb(225,225,225); border-bottom: solid 1px rgb(225,225,225); background: url(../theme-images/linebackgroundl.gif) top right no-repeat;}
+.nav-sub, .portletNavigationTree {float: left; width: 160px; min-height: 150px; height: auto!important; height: 150px; margin: 10px 15px 0px 1px; padding: 0px 0px 10px 0px; background-color: transparent; border-left: solid 1px rgb(225,225,225); border-bottom: solid 1px rgb(225,225,225); background: url(../theme-images/linebackgroundl.gif) top right no-repeat;}
 .nav-sub ul, .portletNavigationTree ul {float: left; list-style: none; width: 150px; margin: 0px; padding: 0px; border-bottom: dotted 0px rgb(215,215,215);}
 .nav-sub li, .portletNavigationTree li {margin: 0px; padding: 0px;}
 .nav-sub li.navTreeTopNode, .portletNavigationTree li.navTreeTopNode {vertical-align: top; color: rgb(0,0,0); font-weight: none; font-size: 14px; border-bottom: solid 0px rgb(205,205,205)}
@@ -61,7 +61,7 @@ dd.portletItem {margin-left: 10px;}
 /* Content */
 .content {float: left; width: 940px; min-height: 170px; height: auto; margin: 10px 0px 0px 0px; padding: 0px 0px 10px 0px;}
 .contentbox-container {clear: both; float: left; width: 640px; margin: 5px 0px 10px 5px; padding: 0px; background-color: transparent;}
-.contentbox-full {width: 760px; margin: 0px 0px 0px 0px; padding: 0px;}
+.contentbox-full {float:left; width: 760px; margin: 0px 0px 0px 0px; padding: 0px;}
 .contentbox-partial {float: left; width: 545px; margin: 0px 0px 0px 0px; padding: 0px 5px 0px 5px; border-right: solid 0px rgb(235,235,235);}
 
 .contentbox-partial-half {float: left; width: 228px; margin: 10px 0px 0px 0px; padding: 0px 23px 0px 0px; border-right: solid 0px rgb(235,235,235);}
@@ -179,12 +179,4 @@ dl.portletEvents dd.portletItem a.tile {
 
 #portal-globalnav ul.submenu a, #portal-globalnav ul.submenu a:hover {
 border-style: 0px none none;
-}
-
-div.position-1\:4 {
-    margin-left: -98.875%;
-}
-div.width-1\:2,
-div.width-3\:4 {
-    width: 97.75% !important;
 }
