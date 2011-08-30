@@ -73,6 +73,7 @@
         
             <replace css:content-children="#content-core"   css:theme-children="#contentfeature3 p" />
         </rules>
+        
         <replace css:content-children="#portal-column-one"
                  css:theme-children="#contentbox-leftbar" />
                  
@@ -81,7 +82,10 @@
               
         <replace css:content-children="#portal-column-two"
                  css:theme-children="#contentbox-rightbar" />
-              
+
+        <strip css:theme=".contentbox-full"
+               if-content="$rightcolumns" />
+               
         <strip css:theme=".contentbox-partial"
                if-content="not($rightcolumns)" />
                
