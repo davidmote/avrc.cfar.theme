@@ -87,7 +87,9 @@
                
         <drop css:theme="#contentbox-rightbar"
               if-content="not($rightcolumns)" />
-               
+
+        <drop attributes="class" css:content=".cell" />
+
         <replace css:content="#portal-siteactions"
                  css:theme="#footer-actions" />
 
