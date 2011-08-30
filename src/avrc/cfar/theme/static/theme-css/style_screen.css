@@ -26,7 +26,7 @@ body {font-size: 62.5%; margin: 0em auto; padding: 0px; font-family: verdana, sa
 .img-flag {display: inline; vertical-align: text-bottom; height: 1.0em; margin: 0px; padding: 0px; border: solid 1px rgb(0,0,0);}
 
 /*Drop-down menu*/
-.nav-main {clear: both; float: left; width:940px; border:none; color:rgb(255,255,255); font-size:120%; background-color: rgb(20,20,20);}
+.nav-main {clear: both; float: left; width:940px; border:none; color:rgb(255,255,255); font-size:120%; background-color: rgb(20,20,20); position:relative; z-index:0}
 .nav-main ul {list-style: none; margin: 0px; padding: 0px; font-weight: normal; text-align: left;}	
 .nav-main ul li {float:left; z-index:auto !important; z-index:1000; border-right:solid 1px rgb(45,45,45);}
 .nav-main ul li a {float:none !important; float:left; display:block; height:2.4em; line-height:2.3em; padding: 0 16px 0 16px; text-decoration:none; color: rgb(255,255,255);}
