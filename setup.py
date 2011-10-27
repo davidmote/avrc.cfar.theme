@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.3.0'
+version = '0.4.0'
 
 setup(
     name='avrc.cfar.theme',
@@ -29,7 +29,7 @@ setup(
     extras_require=dict(
         test=['plone.app.testing'],
         ),
-    entry_points="""    
+    entry_points="""
     [z3c.autoinclude.plugin]
     target = plone
     """,
