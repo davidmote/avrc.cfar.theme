@@ -9,7 +9,7 @@
     <xsl:variable name="rightcolumns" css:select="#portal-column-two"/>
 
     <!-- The default theme, used for standard Plone web pages -->
-    <theme href="./home.html" if-path="/ front-page/" />
+    <theme href="./home.html" if="$home_page" />
     <theme href="./default.html" />
     <notheme if="$ajax_load" />
     <notheme if-content="not($wrapped)" />
@@ -46,7 +46,7 @@
                  css:theme-children="#nav-main" />
                  
         <strip css:theme="#content"
-               if-path="/ front-page/" />
+                if="$home_page" />
                
         <replace css:content="#portal-column-content"
                  css:theme-children="#content"  />
