@@ -31,8 +31,12 @@ border-image: initial;
 
 ul#contentActionMenus li {
     list-style-type: none;
+    display: inline;
 }
 
+#edit-bar {
+    font-size: 0.75em;
+}
 #edit-bar a
 {
     color:white !important;
@@ -42,4 +46,30 @@ ul#contentActionMenus li {
 #edit-bar a:hover
 {
     color:black !important;
+}
+
+#content dl.actionMenu
+ {   margin-bottom: 0px;
+}
+
+#contentActionMenus dl.actionMenu.activated dd a:hover, #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
+    background-color: White !important;
+    color: #666666 !important;
+}
+
+#content a.link-overlay {
+    border-bottom:none !important;
+}
+
+element.style {
+    cursor: pointer;
+}
+
+#contentActionMenus dl.actionMenu a,
+#contentActionMenus dl.actionMenu.activated dd {
+    line-height: 1.9em;
+}
+
+#contentActionMenus dd.actionMenuContent ul {
+    margin-left: .5em;
 }

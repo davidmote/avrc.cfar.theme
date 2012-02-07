@@ -40,7 +40,7 @@ body {
     padding: 0px;
     text-align: right;
     line-height: 1.3em;
-    font-size: 110%;
+    font-size: 1.1em;
     color: rgb(185,185,185)
 
 }
@@ -168,7 +168,7 @@ body {
     color: rgb(245,245,245);
     font-weight: normal;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 1.1em;
 }
 
 .nav-global a:hover {
@@ -193,7 +193,7 @@ body {
     width:940px;
     border:none;
     color:rgb(255,255,255);
-    font-size:120%;
+    font-size:1.2em;
     background-color: rgb(20,20,20);
     position:relative;
     z-index:0
@@ -322,7 +322,7 @@ body {
     vertical-align: top;
     margin: 0px 0px 5px 0px ;
     padding: 10px 0px 5px 0px;
-    color: rgb(0,0,0);
+    color: rgb(0,0,0) !important;
     font-weight: none;
     font-size: inherit;
 }
@@ -340,7 +340,7 @@ body {
     border-left: solid 0px rgb(100,100,100);border-bottom-style: dotted;
     color: rgb(40,91,169);
     font-weight: none;
-    font-size: 120%;
+    font-size: 1.2em;
 }
 
 .nav-sub .navTreeLevel1 li.navTreeItem a, .portletNavigationTree .navTreeLevel1 li.navTreeItem a {
@@ -355,7 +355,8 @@ body {
      border-left: solid 0px (255,255,200);
     color: rgb(40,91,169);
     font-weight: normal;
-    font-size: 95%;background-color: transparent;
+    font-size: 95%;
+    background-color: transparent;
 }
 
 .nav-sub li a, .portletNavigationTree li a {
@@ -369,7 +370,7 @@ body {
     border-left: solid 0px rgb(201,198,234);
     color: rgb(100,100,100);
     text-decoration: none;
-    font-size: 120%;
+    font-size: 1.2em;
 }
 
 .nav-sub li a:hover, .portletNavigationTree li a:hover {
@@ -466,11 +467,11 @@ dd.portletItem {
     margin: 0px 2px 0px 0px;
     padding: 0px 5px 0px 5px;
     border-left: solid 0px rgb(235,235,235);
-    font-size: 11px;
+    font-size: 1.1em;
 }
 
 .contentbox-sidebar p, #content-rightbar p {
-    font-size: 11px;
+    font-size: 1.1em;
 }
 
 .documentFirstHeading {
@@ -483,7 +484,7 @@ dd.portletItem {
     color: rgb(0,0,0);
     text-transform: normal;
     font-weight: none;
-    font-size: 17px;
+    font-size: 1.7em;
 }
 
 .contentline {
@@ -502,7 +503,7 @@ dd.portletItem {
     padding: 0px;
     text-align: left;
     line-height: 1em;
-    font-size: 110%;
+    font-size: 1.1em;
     color: rgb(40,40,40)
 }
 
@@ -522,9 +523,9 @@ dd.portletItem {
 
 .content-description, .documentDescription {
     font-family:Georgia,serif;
-    font-size:14px;
+    font-size:1.4em;
     font-style:italic;
-    line-height:18px;
+    line-height:1.8em;
     font-weight:normal;
     color:rgb(28,55,98);
     padding:5px 0 12px 0;
@@ -534,13 +535,13 @@ dd.portletItem {
 
 
 /* Formatting lists */
-.content ul.noindent {
+/*.content ul.noindent {
     margin: 0px 0px 18px 5px;
     padding: 0px;
     list-style-type: disc;
     list-style-position: outside;
-    line-height: 18px;
-    font-size: 12px;
+    line-height: 1.8em;
+    font-size: 1.2em;
     color: rgb(70,70,70);
 }
 
@@ -548,8 +549,8 @@ dd.portletItem {
     margin: 0px 0px 17px 5px;
     padding: 0px 0px 0px 15px;
     list-style-type: disc;
-    line-height: 18px;
-    font-size: 12px;
+    line-height: 1.8em;
+    font-size: 1.2em;
     color: rgb(70,70,70);
 }
 
@@ -557,18 +558,18 @@ dd.portletItem {
     margin: 0px 0px 0px 9px;
     padding: 0px 0px 0px 25px;
     list-style-type: decimal;
-    line-height: 18px;
-    font-size: 12px;
+    line-height: 1.8em;
+    font-size: 1.2em;
     list-style-position: outside;
 }
-
+*/
 
 /* Heading */
 h1 {
     clear: left;
     margin: 0.1em 0px 0.3em 0px;
     font-weight: normal;
-    font-size: 17px;
+    font-size: 1.7em;
     color: rgb(0,0,0);
 }
 
@@ -576,7 +577,7 @@ h2 {
     clear: left;
     margin: 0.2em 0px 0.2em 0px;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 1.5em;
     color: rgb(0,0,0)
 }
 
@@ -584,7 +585,7 @@ h3 {
     clear: left;
     margin: 0.1em 0px 0.2em 0px;
     font-weight: normal;
-    font-size: 11px;
+    font-size: 1.1em;
     color: rgb(28,55,98)
 }
 
@@ -592,15 +593,15 @@ h4 {
     clear: left;
     margin: 0.7em 0px 0.2em 0px;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 1.4em;
     color: rgb(0,0,0);
 }
 
 h5 {
     font-family:Georgia,serif;
-    font-size:14px;
+    font-size:1.4em;
     font-style:italic;
-    line-height:18px;
+    line-height:1.83em;
     font-weight:normal;
     color:rgb(28,55,98);
     padding:5px 0 12px 0;
@@ -613,8 +614,8 @@ h5 {
 p {
     margin: 0px 0px 0.1em 0px;
     padding: 0px;
-    line-height: 18px;
-    font-size: 12px;
+    line-height: 1.8em;
+    font-size: 1.2em;
     color: rgb(70,70,70);
 }
 
@@ -637,7 +638,7 @@ p {
     padding: 0px;
     text-align: center;
     line-height: 1.3em;
-    font-size: 110%;
+    font-size: 1.1em;
     color: rgb(255,255,255)
 }
 
@@ -646,7 +647,7 @@ p {
     clear: both;
     margin: 0;padding: 0;
     width: 100%;
-    height: 100%px;
+    height: 100%;
     display: block;
     background-color: rgb(128,0,0);
     background: url(../theme-images/bg2.png) top center repeat-x;
@@ -761,7 +762,7 @@ p {
     padding: 10px 7px 10px 0px;
     border-bottom: dotted 1px rgb(225,225,225);
     text-align: left;
-    font-size: 12px;
+    font-size: 1.2em;
 }
 
 .table th {
@@ -770,7 +771,7 @@ p {
     border: solid 1px rgb(255,255,255);
     empty-cells: show;
     text-align: left;
-    font-size: 12px;
+    font-size: 1.2em;
 }
 
 
@@ -822,7 +823,7 @@ padding-top:5px;
 
 dl.portletEvents dd.portletItem a.tile {
     
- font-size: 12px;
+ font-size: 1.2em;
 
 }
 

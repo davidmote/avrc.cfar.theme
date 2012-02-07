@@ -19,10 +19,152 @@
     font-size: 0.785em;
     min-width: inherit;
     border-right: inherit;
+    color: white !important;
+}
+#portal-globalnav .selected a:hover,
+
+#portal-globalnav  a:hover,
+#portal-globalnav a:active,
+.nav-main ul li:hover,
+.nav-main ul li:hover ul,
+.nav-main ul li:hover ul li a:hover,
+.nav-main ul li:hover ul li a,
+ #portal-globalnav ul.submenu a, 
+ #portal-globalnav ul.submenu a:hover,
+ #portal-globalnav .selected a:hover {
+    background-color: #4683BC;
+    color: white !important;
 }
 
-#portal-globalnav .selected a:hover,
-#portal-globalnav  a:hover {
-    background-color: #4683BC;
-    color: White;
+/*.nav-main ul li:hover ul li a:hover,
+*/ #portal-globalnav ul.submenu a:hover {
+    color: #F3DFBA !important;
+}
+.nav-main ul li:hover ul {
+    top: 1.8em;
+    width: 11.5em;
+}
+
+.nav-main ul li:hover ul li a {
+    width: 12em;
+
+}
+.icons-on .navTree a  {
+    background-image: none;
+    padding-left: 0px !important;
+}
+
+.navTree a:hover,
+#content a:hover,
+dl.portlet a:hover {
+    color: #254C75 !important;
+}
+.nav-sub li.navTreeTopNode a, .nav-sub li.navTreeTopNode a:hover, .portletNavigationTree li.navTreeTopNode a, .portletNavigationTree li.navTreeTopNode a:hover {
+    color: #000000;
+    font-size: 1.1em;
+    margin: 0 0 5px;
+    padding: 10px 0 5px;
+    vertical-align: top;
+}
+
+.nav-sub li.navTreeItem.visualNoMarker a, .portletNavigationTree li.navTreeItem.visualNoMarker a {
+    border-bottom: 0 dotted #D7D7D7;
+    border-left: 0 solid #646464;
+    color: #285BA9;
+    display: block;
+    font-size: 95%;
+    height: auto !important;
+    line-height: 1.7em;
+    margin: 1px -1px 5px 10px;
+    min-height: 1.7em;
+    padding: 0 7px 0 10px;
+    vertical-align: middle;
+}
+
+.portletNavigationTree li.navTreeItem a.navTreeCurrentItem, .portletNavigationTree li.navTreeItem.navTreeItemInPath a.navTreeItemInPath {
+    font-weight: bold !important;
+}
+
+dl.portlet ul.navTreeLevel0 > .navTreeItem {
+    border-bottom: none;
+    line-height: inherit;
+    padding: inherit;
+}
+
+.nav-sub .navTreeLevel1 li.navTreeItem a, .portletNavigationTree .navTreeLevel1 li.navTreeItem a {
+    font-size: 85%;
+    font-weight: normal;
+    height: auto !important;
+    line-height: 1.7em;
+    margin: 1px 15px;
+    min-height: 1.9em;
+}
+
+dl.portlet ul.navTree .navTreeCurrentItem {
+    background-color: transparent;
+
+}
+
+.state-published {
+    color: #285BA9 !important;
+}
+
+.nav-global li a {
+    font-size: .9em;
+
+}
+#content {
+    font-size: .9em;
+    color: #464646;
+}
+#content a:link, dl.portlet a:link {
+    border-bottom: none;
+}
+
+.documentFirstHeading {
+    font-size: 1.7em;
+    height: 1.7em;
+    margin: 10px 0 6px;
+}
+
+#content div.documentByLine {
+    font-size: 75%;
+}
+
+#content .documentDescription, #content #description,
+.content-description, .documentDescription {
+    border-bottom: 1px dotted #CCCCCC;
+    color: #1C3762;
+    font-family: Georgia,serif;
+    font-size: 1.4em;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1.8em;
+    margin: 0 0 10px;
+    padding: 5px 0 12px;
+}
+
+
+p {
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+#content .pullquote {
+    color: #464646;
+    font-size: 1.4em;
+    line-height: 1.4em
+}
+
+.footer {
+    font-size:.7em;
+}
+
+.footer a:hover {
+    color: #969696 !important;
+    text-decoration: none;
+}
+
+.content-features {
+    font-size: .8em;
 }
