@@ -53,7 +53,10 @@
         
         <drop css:content="#portal-breadcrumbs" />
         <drop css:content=".documentAuthor" />
-        
+
+        <replace css:content="#portal-searchbox"
+                 css:theme="#searchboxcontainer" />
+
         <rules if-path="/ front-page/">
             <replace css:content="#edit-bar" css:theme="#edit-area" />
 

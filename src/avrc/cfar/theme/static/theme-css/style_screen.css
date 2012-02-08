@@ -282,18 +282,18 @@ body {
 }
 
 
-.nav-sub, .portletNavigationTree {
+.nav-sub, dl.portletNavigationTree {
     float: left;
     width: 160px;
     min-height: 150px;
-    height: auto!important;
+    height: auto !important;
     height: 150px;
-    margin: 10px 15px 0px 1px;
+    margin: 30px 15px 0px 1px;
     padding: 0px 0px 10px 0px;
-    background-color: transparent;
+    background: #FFFAEE;
     border-left: solid 1px rgb(225,225,225);
+    border-right: solid 1px rgb(225,225,225);
     border-bottom: solid 1px rgb(225,225,225);
-    background: url(../theme-images/linebackgroundl.gif) top right no-repeat;
 }
 
 .nav-sub ul, .portletNavigationTree ul {
