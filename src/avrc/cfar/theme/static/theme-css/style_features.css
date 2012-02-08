@@ -268,9 +268,10 @@ dl.portletCalendar dt {
 }
 
 .portletWrapper {
-    -moz-border-radius: 10px;
     border-radius: 10px;
+    -moz-border-radius: 10px;
 }
+
 #contentbox-rightbar .portletWrapper {
     width: 170px;
 
