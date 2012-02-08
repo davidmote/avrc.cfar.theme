@@ -70,6 +70,7 @@ dl.portlet a:hover {
     margin: 0 0 5px;
     padding: 10px 0 5px;
     vertical-align: top;
+    font-weight: bold;
 }
 
 .nav-sub li.navTreeItem.visualNoMarker a,
@@ -78,10 +79,10 @@ dl.portlet a:hover {
     border-left: 0 solid #646464;
     color: #285BA9;
     display: block;
-    font-size: 95%;
+    font-size: 1em;
     height: auto !important;
-    line-height: 1.5em;
-    margin: 1px -1px 5px 5px;
+    line-height: 1.35em;
+    margin: 0 7px 0 10px;
     min-height: 1.9em;
     padding: 0 7px 0 5px;
     vertical-align: middle;
@@ -113,15 +114,13 @@ dl.portlet ul.navTreeLevel0 > .navTreeTopNode {
     font-size: 85%;
     font-weight: normal;
     height: auto !important;
-    line-height: 1.4em;
-    margin: 1px 15px;
+    line-height: 1.2em;
+    margin: 0 7px 0 30px;
     min-height: 1.9em;
 }
 
 dl.portlet ul.navTree .navTreeCurrentItem {
     border: none;
-    margin: 0px;
-
 }
 
 dl.portlet ul.navTree .navTreeCurrentItem {
@@ -134,7 +133,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 }
 
 .nav-global li a {
-    font-size: .9em;
+    font-size: 85%;
 
 }
 #content {
@@ -174,6 +173,11 @@ p {
     line-height: 1.6em;
 }
 
+#content p, #content ol, #content ul {
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
 #content .pullquote {
     color: #464646;
     font-size: 1.4em;
@@ -196,11 +200,12 @@ p {
 
 #portal-searchbox {
     position: relative;
-    top: 30px;
+    top: 25px;
 }
 
 #livesearchLegend {
-    background-color: #4683BC;
+    background-color: white;
+    /* #4683BC;*/
     font-weight: bold;
 }
 
@@ -230,14 +235,94 @@ p {
     padding-top: 0.45em;
 }
 
-.nav-sub li.navTreeTopNode, .portletNavigationTree li.navTreeTopNode
-{
-    padding-bottom: 0em;
-    background-image: url("../theme-images/linebackgroundl.gif");
-    background-position: right top;
-    padding-left: 10px !important;
-    width: 151px;
-    margin-left: -11px;
-    margin-top: -10px;
-    border-left: solid 1px rgb(225,225,225);
+
+#portal-breadcrumbs {
+    font-size: 75%;
+}
+
+.footer p {
+    font-size: 1em;
+}
+
+#portal-siteactions {
+    padding-bottom: 1em;
+}
+
+#portal-globalnav>li {
+    border-right:solid 1px rgb(45,45,45);
+
+}
+
+dl.portlet ul.navTree .navTreeTopNode .navTreeCurrentItem {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.portletCalendar dl,
+.portletCalendar dd {
+    font-size: 90%;
+}
+
+dl.portletCalendar dt {
+    background-color: #EEE;
+}
+
+.portletWrapper {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+#contentbox-rightbar .portletWrapper {
+    width: 170px;
+
+}
+
+.portletWrapper {
+    background: none repeat scroll 0 0 #FFFAEE;
+    border: 1px solid #E1E1E1;
+    float: left;
+    height: auto !important;
+    margin: 25px 0 0 1px;
+    min-height: 150px;
+    padding: 0 0 10px;
+    width: 160px;
+}
+
+#contentbox-rightbar .portletWrapper .portletHeader span,
+#contentbox-rightbar .portletWrapper .portletHeader a, 
+.portletWrapper dl.portlet dt,
+div.portletAssignments div.portletHeader {
+    background: transparent;
+    font-size: 1em;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+
+#contentbox-rightbar .portletHeader span, #contentbox-rightbar .portletHeader a, 
+dl.portlet dt, div.portletAssignments div.portletHeader {
+    display: block;
+}
+
+dd.portletItem {
+    
+        font-size: 90%;
+    height: auto !important;
+    line-height: 1.35em;
+    margin: 0 7px 0 10px;
+    min-height: 1.9em;
+}
+dl.portlet dd.portletItem, dl.portlet dd.portletFooter, dl.portletError dd {
+    padding-top: 0px;
+}
+
+dl.portlet dd.portletFooter {
+    font-size: 80%;
+    margin-left: 1em;
+}
+
+
+#edit-bar p, #edit-bar ol, #edit-bar ul {
+    margin-bottom: 0px;
+    margin-top: 0px;
+
 }
