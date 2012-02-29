@@ -47,13 +47,18 @@
                  
         <strip css:theme="#content"
                 if="$home_page" />
-               
+
+        <strip css:content=".portletWrapper"
+                if="$home_page" />
+
         <replace css:content="#portal-column-content"
                  css:theme-children="#content"  />
         
-        <drop css:content="#portal-breadcrumbs" />
         <drop css:content=".documentAuthor" />
-        
+
+        <replace css:content="#portal-searchbox"
+                 css:theme="#searchboxcontainer" />
+
         <rules if-path="/ front-page/">
             <replace css:content="#edit-bar" css:theme="#edit-area" />
 
@@ -93,7 +98,6 @@
               if-content="not($rightcolumns)" />
 
         <drop attributes="class" css:content=".cell" />
-
         <replace css:content="#portal-siteactions"
                  css:theme="#footer-actions" />
 
