@@ -1,54 +1,102 @@
-import unittest
+import unittest2 as unittest
+import transaction
 
-from zope.testing import doctestunit
-from zope.component import testing
-from Testing import ZopeTestCase as ztc
+from plone.testing.z2 import Browser
+from plone.app.testing import SITE_OWNER_NAME
+from plone.app.testing import SITE_OWNER_PASSWORD
+from plone.app.testing import setRoles
+from plone.app.testing import TEST_USER_ID
 
-from Products.Five import zcml
-from Products.Five import fiveconfigure
-from Products.PloneTestCase import PloneTestCase as ptc
-from Products.PloneTestCase.layer import PloneSite
-ptc.setupPloneSite()
+from zope.component import getUtility
+from Products.CMFCore.utils import getToolByName
 
-import avrc.cfar.theme
+from plone.registry.interfaces import IRegistry
+from plone.app.theming.interfaces import IThemeSettings
 
-class TestCase(ptc.PloneTestCase):
-    class layer(PloneSite):
-        @classmethod
-        def setUp(cls):
-            fiveconfigure.debug_mode = True
-            zcml.load_config('configure.zcml',
-                             avrc.cfar.theme)
-            fiveconfigure.debug_mode = False
-
-        @classmethod
-        def tearDown(cls):
-            pass
+from avrc.cfar.theme.testing import CFAR_THEME_INTEGRATION_TESTING
+from avrc.cfar.theme.testing import CFAR_THEME_FUNCTIONAL_TESTING
 
 
-def test_suite():
-    return unittest.TestSuite([
+class TestSetup(unittest.TestCase):
+    layer = CFAR_THEME_INTEGRATION_TESTING
 
-        # Unit tests
-        #doctestunit.DocFileSuite(
-        #    'README.txt', package='avrc.cfar.theme',
-        #    setUp=testing.setUp, tearDown=testing.tearDown),
+    def setUp(self):
+        self.theme_path = '++theme++avrc.cfar.theme'
 
-        #doctestunit.DocTestSuite(
-        #    module='avrc.cfar.theme.mymodule',
-        #    setUp=testing.setUp, tearDown=testing.tearDown),
+    def test_theme_configured(self):
+        registry = getUtility(IRegistry)
+        settings = registry.forInterface(IThemeSettings)
+        self.assertEqual(settings.enabled, True)
+        self.assertEqual(settings.rules,
+                '/%s/rules.xml' % self.theme_path
+            )
+        self.assertEqual(settings.absolutePrefix,
+                '/%s' % self.theme_path
+            )
+
+        self.assertTrue(settings.parameterExpressions.has_key('ajax_load'))
+
+        self.assertEqual(settings.parameterExpressions['ajax_load'], 'python: \'ajax_load\' in request.form')
+
+        self.assertTrue(settings.parameterExpressions.has_key('home_page'))
+
+        self.assertEqual(settings.parameterExpressions['home_page'], 'python: context_state.is_portal_root()')
+
+    def test_css_registry_configured(self):
+        portal = self.layer['portal']
+        cssRegistry = getToolByName(portal, 'portal_css')
+        css_dir = 'theme-css'
+
+        css_files = [
+            'edit_screen.css',
+            'style_features.css',
+            'style_screen.css',
+            ]
+        for css_file in css_files:
+            self.assertTrue('%s/%s/%s' % (self.theme_path, css_dir, css_file)
+                        in cssRegistry.getResourceIds()
+                    )
 
 
-        # Integration tests that use PloneTestCase
-        #ztc.ZopeDocFileSuite(
-        #    'README.txt', package='avrc.cfar.theme',
-        #    test_class=TestCase),
+class TestRendering(unittest.TestCase):
 
-        #ztc.FunctionalDocFileSuite(
-        #    'browser.txt', package='avrc.cfar.theme',
-        #    test_class=TestCase),
+    layer = CFAR_THEME_FUNCTIONAL_TESTING
 
-        ])
+    def setUp(self):
+        app = self.layer['app']
+        portal = self.layer['portal']
+        setRoles(portal, TEST_USER_ID, ['Manager'])
+        portal.invokeFactory('Document', 'page', title=u'Page 1')
+        setRoles(portal, TEST_USER_ID, ['Anonymous'])
+        transaction.commit()
 
-if __name__ == '__main__':
-    unittest.main(defaultTest='test_suite')
+    def test_render_home_page(self):
+        app = self.layer['app']
+        portal = self.layer['portal']
+        transaction.commit()
+        browser = Browser(app)
+        browser.open(portal.absolute_url())
+        self.assertTrue('<!-- Theme home.html -->' in browser.contents)
+
+    def test_render_sub_page(self):
+        app = self.layer['app']
+        portal = self.layer['portal']
+        transaction.commit()
+
+        browser = Browser(app)
+        browser.open(portal.absolute_url() + '/page')
+        self.assertTrue('<!-- Theme default.html -->' in browser.contents)
+
+    def test_render_zmi_page(self):
+        app = self.layer['app']
+        portal = self.layer['portal']
+
+        transaction.commit()
+
+        browser = Browser(app)
+        browser.addHeader('Authorization', 'Basic %s:%s' % (SITE_OWNER_NAME, SITE_OWNER_PASSWORD,))
+
+        browser.open(portal.absolute_url() + '/manage_main')
+
+        self.assertFalse('<!-- Theme default.html -->' in browser.contents)
+        self.assertFalse('<!-- Theme home.html -->' in browser.contents)
