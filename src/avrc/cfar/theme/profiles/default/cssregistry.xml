@@ -2,24 +2,24 @@
 <object name="portal_css">
 
  <!-- Set conditions on stylesheets we don't want to pull in -->
- <stylesheet
+<!--  <stylesheet
      expression="not:request/HTTP_X_THEME_ENABLED | nothing"
      id="public.css"
      />
  <stylesheet
      expression="not:request/HTTP_X_THEME_ENABLED | nothing"
      id="member.css" authenticated="False"
-     />
+     /> -->
 
  <stylesheet
      expression="not:request/HTTP_X_THEME_ENABLED | nothing"
      id="dropdown-menu.css" 
      />
 
- <stylesheet
+ <!-- <stylesheet
      expression="not:request/HTTP_X_THEME_ENABLED | nothing"
      id="columns.css" 
-     />
+     /> -->
  <!-- Add new stylesheets -->
  <!-- Note: applyPrefix is not available in Plone < 4.0b3 -->
 
