@@ -455,6 +455,13 @@ dd.portletItem {
     border-right: solid 0px rgb(235,235,235);
 }
 
+/*iphone fix*/
+@media only screen and (max-device-width: 480px) {
+    .contentbox-partial {position: relative; left: 545px;}
+}
+
+
+
 .contentbox-sidebar, #content-rightbar {
     float: right;
     width: 175px;
