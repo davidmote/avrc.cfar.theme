@@ -458,6 +458,7 @@ dd.portletItem {
 /*iphone fix*/
 @media only screen and (max-device-width: 480px) {
     .contentbox-partial {position: relative; left: 545px;}
+    .contentbox-full {position: relative; left: 760px;}
 }
 
 
