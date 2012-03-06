@@ -74,7 +74,7 @@
             <replace css:content-children="#portal-column-one > div:nth-of-type(2) .portletItem"
             css:theme-children="#contentfeature2 > p" />
         
-            <replace css:content="#content h1"  css:theme-children="#contentfeature3 h2" />
+            <replace css:content-children="#content h1"  css:theme-children="#contentfeature3 h2" />
         
             <replace css:content-children="#content-core"   css:theme-children="#contentfeature3 p" />
         </rules>
