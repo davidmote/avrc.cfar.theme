@@ -438,12 +438,22 @@ dd.portletItem {
     padding: 0px;
 }
 
+
 .contentbox-partial {
     float: left;
+    position: relative;
     width: 545px;
     margin: 0px 0px 0px 0px;
     padding: 0px 5px 0px 5px;
     border-right: solid 0px rgb(235,235,235);
+}
+
+/*iphone fix*/
+
+@media only screen and (max-device-width: 480px) {
+	.contentbox-partial {position: relative; left: 545px;width:545px;}
+	.content {position:relative; overflow:hidden; }
+	.contentbox-full {position: relative; left: 760px;}
 }
 
 
@@ -454,14 +464,6 @@ dd.portletItem {
     padding: 0px 23px 0px 0px;
     border-right: solid 0px rgb(235,235,235);
 }
-
-/*iphone fix*/
-@media only screen and (max-device-width: 480px) {
-    .contentbox-partial {position: relative; left: 545px;}
-    .contentbox-full {position: relative; left: 760px;}
-}
-
-
 
 .contentbox-sidebar, #content-rightbar {
     float: right;
