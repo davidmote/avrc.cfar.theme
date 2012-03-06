@@ -645,6 +645,7 @@ p {
     clear: both;
     margin: 0;padding: 0;
     width: 100%;
+    min-width:940px;
     height: 100%;
     display: block;
     background-color: rgb(128,0,0);
