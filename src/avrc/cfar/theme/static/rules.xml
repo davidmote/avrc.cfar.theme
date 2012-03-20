@@ -52,7 +52,7 @@
                 if="$home_page" />
 
         <replace css:content="#portal-column-content"
-                 css:theme-children="#content"  />
+                 css:theme="#content"  />
         
         <drop css:content=".documentAuthor" />
 
