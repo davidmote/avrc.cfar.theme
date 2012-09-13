@@ -56,7 +56,7 @@ body {
 }
 
 .img-header2 {
-    
+
     clear: both;
     float: left;
     width: 940px;
@@ -68,8 +68,8 @@ body {
 }
 
 .img-flashheader {
-    
-    
+
+
     float: left;
     width: 900px;
     height: 110px;
@@ -82,7 +82,7 @@ body {
 
 /* Line Buffers */
 .buffertop {
-    
+
     float: left;
     width: 940px;
     height: 10px;
@@ -92,7 +92,7 @@ body {
 }
 
 .buffertop2  {
-    
+
     float: left;
     width: 940px;
     height: 1px;
@@ -206,7 +206,7 @@ body {
     font-weight: normal;
     text-align: left;
 }
-	
+
 .nav-main ul li {
     float:left;
     z-index:auto !important;
@@ -403,7 +403,7 @@ dd.portletItem {
 #contentbox-rightbar .portletHeader {
     margin: 1em 0px 0.7em 10px;
 }
- 
+
 #contentbox-rightbar .portletHeader span, #contentbox-rightbar .portletHeader a {
     clear: left;
     font-weight: normal;
@@ -629,7 +629,7 @@ p {
     height: 100px;
     display: block;
     margin: 0 auto;
-    padding: 15px 20px;
+    padding: 5px 20px 10px;
     font-size: 1.0em;
     background-color: transparent;line-height: 120%;
 }
@@ -641,6 +641,20 @@ p {
     line-height: 1.3em;
     font-size: 1.1em;
     color: rgb(255,255,255)
+}
+
+.footer #footer-images img {
+    margin: 0 5px;
+    vertical-align: middle;
+}
+.footer #footer-images {
+    margin:  0px auto 5px;
+    background: none repeat scroll 0 0 #FFF;
+     border-radius: 10px 10px 10px 10px;
+     color: #000;
+    border: 1px solid #E1E1E1;
+    border-radius: 10px 10px 10px 10px;
+
 }
 
 .footer-cont {
@@ -780,18 +794,18 @@ p {
 
 .portletNavigationTree li.navTreeItem a.navTreeCurrentItem,
 .portletNavigationTree li.navTreeItem.navTreeItemInPath a.navTreeItemInPath
- 
+
  {
-    
+
   font-weight: bold !important;
 
 }
 
 
 .tileImage {
-    
+
 float: right;
-    
+
  padding-bottom: 2px;
  padding-top: 2px;
 
@@ -800,14 +814,14 @@ float: right;
 
 
 .contentbox-partial-half .tileImage {
-    
+
  display: none;
 
 }
 
 
 .tileItem {
-    
+
  border-bottom: 1px solid black;
  padding-bottom: 2px;
  padding-top: 2px;
@@ -816,7 +830,7 @@ float: right;
 
 
 dd.portletItem {
-    
+
 padding-bottom:5px;
 padding-top:5px;
 
@@ -824,28 +838,28 @@ padding-top:5px;
 
 
 dl.portletEvents dd.portletItem a.tile {
-    
+
  font-size: 1.2em;
 
 }
 
 
 .portletItemDetails {
-    
+
  display:block;
 
 }
 
 
 #portal-siteactions {
-    
-    text-align: center;
-    margin: 10px 5px 20px 5px;
 
+    text-align: center;
+    margin: 5px 5px 0px 5px;
+    padding-bottom: 5px !important;
 }
 
 #portal-siteactions li {
-    
+
     display: inline;
     padding-left: 10px;
     margin-right: 10px;
@@ -855,14 +869,14 @@ dl.portletEvents dd.portletItem a.tile {
 
 
 #portal-siteactions li:first-child {
-    
+
     border: 0px none;
 
 }
 
 
 #portal-globalnav ul.submenu a, #portal-globalnav ul.submenu a:hover {
-    
+
 border-style: 0px none none;
 
 }
