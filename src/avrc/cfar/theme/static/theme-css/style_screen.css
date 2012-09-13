@@ -644,17 +644,17 @@ p {
 }
 
 .footer #footer-images img {
-    height: 50px;
     margin: 0 5px;
     vertical-align: middle;
 }
 .footer #footer-images {
-    margin:  0px 5px 5px;
+    margin:  0px auto 5px;
     background: none repeat scroll 0 0 #FFF;
      border-radius: 10px 10px 10px 10px;
-     color: #285BA9;
+     color: #000;
     border: 1px solid #E1E1E1;
     border-radius: 10px 10px 10px 10px;
+
 }
 
 .footer-cont {
